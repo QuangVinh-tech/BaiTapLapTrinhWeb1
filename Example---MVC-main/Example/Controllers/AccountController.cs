@@ -35,7 +35,7 @@ namespace Example.Controllers
 
             if (result.Succeeded)
             {
-                if (model.Email == "1911190@dlu.edu.vn")
+                if (model.Email == "duongvinh1113@gmail.com")
                 {
                     await _userManager.AddToRoleAsync(user, "Admin");
                 }
