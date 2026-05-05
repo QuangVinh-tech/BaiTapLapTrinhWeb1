@@ -1,0 +1,17 @@
+﻿@model Example.Models.ViewModel.VMStudent
+<a class="btn btn-secondary" asp-controller="Student" asp-action="GetAll">← Trở về</a>
+<h2>Thông tin sinh viên</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="@Model.ImgUrl" class="img-thumbnail" />
+        </div>
+        <div class="col-sm-9">
+            <p><strong>Họ tên:</strong> @Model.Name</p>
+            <p><strong>Mã SV:</strong> @Model.Mssv</p>
+            <p><strong>Ngày sinh:</strong> @Model.Birth.ToString("dd/MM/yyyy")</p>
+            <p><strong>Giới tính:</strong> @(Model.Gender == "male" ? "Nam" : "Nữ")</p>
+            <p><strong>Mô tả:</strong> @Model.Description</p>
+        </div>
+    </div>
+</div>

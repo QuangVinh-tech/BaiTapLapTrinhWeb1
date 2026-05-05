@@ -1,0 +1,5 @@
+https://localhost:{port}/Student/GetAll — danh sách
+https://localhost:{port}/Student/AddStudent — thêm mới
+https://localhost:{port}/Student/GetStudentById/1 — chi tiết
+https://localhost:{port}/Student/EditStudentById/1 — sửa
+https://localhost:{port}/Student/DelStudentById/1 — xóa
